@@ -1,4 +1,4 @@
-// Feito agora com o express
+/* // Feito agora com o express
 const express = require("express");
 
 const app = express();
@@ -24,4 +24,4 @@ app.get("/dados/:nome/:cargo", function(req, resp){
 //o listen fica ouvindo todas as conexões no servidor, localhost é a minha máquina
 app.listen(8084, function(){
     console.log("Servidor funcionando na url http://localhost:8084");
-});
+}); */

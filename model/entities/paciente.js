@@ -1,8 +1,8 @@
-const database = require('../services/bd');
 const Sequelize = require('sequelize');
+const database = require('../services/bd');
 
-const Medico = database.define('medico', {
-    crm: {
+const Paciente = database.define('paciente', {
+    cpf: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
@@ -12,6 +12,8 @@ const Medico = database.define('medico', {
         type: Sequelize.STRING,
         allowNull: false
     },
+    rg: Sequelize.INTEGER,
+    endereco: Sequelize.STRING,
     telefone: Sequelize.STRING
 })
-module.exports = Medico;
+module.exports = Paciente;
